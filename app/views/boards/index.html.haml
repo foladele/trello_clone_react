@@ -1,0 +1,36 @@
+%h1.center Trello React Boards
+%hr
+-# .container.black.white-text
+-# 	some text
+
+-# 	%ul
+-# 		- [1,2,3,4,5].each do |number|
+-# 			%li
+-# 				= number
+-# #content.pink.whit-text.center
+-# 	%h3 Some content
+-# 	%img.circle{src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdsD6tg7yEzZggd6b73ODlbw6iUPyzMQ7g28ADMZlAMQP05lRH'}
+-# 	%a#some-id.app-link{href: '/boards', class: 'app-link', data: {confirm: 'really go to board?' } }
+-# 	%hr
+-# 	= link_to 'Boards', boards_path, data: {confirm: 'Really go to boards?'}
+
+-# 	= form_for Board.new do |f|
+-# 		= f.label :name
+-# 		= f.text_field :name
+
+-# 		= f.label :description
+-# 		= f.text_field :description
+
+-# - if @boards.any?
+-# 	- @boards.each do |board|
+-# 		- link_to board.name, board_path(board)
+
+-# - else 
+-# 	%h3 No boards, please create one!
+
+-# = link_to 'New Board', new_board_path
+
+= react_component('Boards', {boards: @boards})
+
+
+
